@@ -7,7 +7,9 @@ namespace BandsApp.Web
             var builder = WebApplication.CreateBuilder(args);
             var app = builder.Build();
 
+            // Hello World
             app.MapGet("/", () => "Hello World!");
+
 
             app.Run();
         }
