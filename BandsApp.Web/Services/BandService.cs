@@ -11,10 +11,10 @@ namespace BandsApp.Web.Services
         new Band { Id = 3, Name = "Company C", Description = "efsef" }
     ];
 
-        public Band[] GetAll() => [.. bands.OrderBy(o => o.Name)];
+        public Band[] GetAllBands() => [.. bands.OrderBy(o => o.Name)];
 
 
-        public Band? GetById(int id) => bands
+        public Band? GetBandById(int id) => bands
            .SingleOrDefault(o => o.Id == id);
     }
 }
