@@ -1,12 +1,14 @@
-﻿namespace BandsApp.Web.Services
+﻿using BandsApp.Web.Models;
+
+namespace BandsApp.Web.Services
 {
     public class BandService
     {
-        List<Band> Bands =
+        List<Band> bands =
     [
-        new Company { Id = 1, Name = "Company A", Description = "awdadw" },
-        new Company { Id = 2, Name = "Company B" Description = "nawdaw" },
-        new Company { Id = 3, Name = "Company C" Description = "efsef" }
+        new Band { Id = 1, Name = "Company A", Description = "awdadw" },
+        new Band { Id = 2, Name = "Company B", Description = "nawdaw" },
+        new Band { Id = 3, Name = "Company C", Description = "efsef" }
     ];
 
         public Band[] GetAll() => [.. bands.OrderBy(o => o.Name)];
