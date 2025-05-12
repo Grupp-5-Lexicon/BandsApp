@@ -6,9 +6,9 @@ namespace BandsApp.Web.Services
     {
         List<Band> bands =
     [
-        new Band { Id = 1, Name = "Company A", Description = "awdadw" },
-        new Band { Id = 2, Name = "Company B", Description = "nawdaw" },
-        new Band { Id = 3, Name = "Company C", Description = "efsef" }
+        new Band { Id = 1, Name = "Queen", Description = "Queen is a band." },
+        new Band { Id = 2, Name = "Beatles", Description = "Beatles is a band." },
+        new Band { Id = 3, Name = "Aerosmith", Description = "Aerosmith is a band." }
     ];
 
         public Band[] GetAllBands() => [.. bands.OrderBy(o => o.Name)];
