@@ -9,7 +9,10 @@
 <body>
     <h2></h2>
     <ul>
-        
+        @foreach (var band in Model)
+        {
+            <li>@band.Name</li>
+        }
     </ul>
 </body>
 </html>

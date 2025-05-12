@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BandsApp.Web.Controllers
 {
-    [Route("bands")]
+   
     public class BandsController : Controller
     {
         BandService bandService = new BandService();
