@@ -7,12 +7,22 @@
 
 </head>
 <body>
-    <h2></h2>
+    <header><h2>Bands Webb App</h2></header>
+    
+    
     <ul>
         @foreach (var band in Model)
         {
             <li><a href="/details/@band.Id">@band.Name</a></li>
         }
     </ul>
+    <footer>
+        Sidan skapades av grupp FEM:
+        <ul>
+            <li>Keshti Gyllinger</li>
+            <li>David Arngren</li>
+            <li>Alberto Nuñez</li>
+        </ul>
+    </footer>
 </body>
 </html>
