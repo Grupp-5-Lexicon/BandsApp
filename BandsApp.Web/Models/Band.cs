@@ -8,5 +8,7 @@
 
         public string VideoAddress { get; set; }
         public string ImageUrl { get; set; }
+
+        public List<string> Albums { get; set; } = new List<string>();
     }
 }

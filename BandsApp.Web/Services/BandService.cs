@@ -6,9 +6,9 @@ namespace BandsApp.Web.Services
     {
         List<Band> bands =
     [
-        new Band { Id = 1, Name = "Queen", Description = "Queen is a band.", ImageUrl = "/images/queen.jpg", VideoAddress = "https://www.youtube.com/embed/fJ9rUzIMcZQ?si=hFNKb_FsrMLoIxE1" },
-        new Band { Id = 2, Name = "Beatles", Description = "Beatles is a band.", ImageUrl = "/images/beatles.jpg", VideoAddress = "https://www.youtube.com/embed/CGj85pVzRJs?si=6ltuaQgdZMgYmHRF" },
-        new Band { Id = 3, Name = "Aerosmith", Description = "Aerosmith is a band.", ImageUrl = "/images/aerosmith.jpg", VideoAddress = "https://www.youtube.com/embed/NMNgbISmF4I?si=_NNpviQ3pudL7PgY" }
+        new Band { Id = 1, Name = "Queen", Description = "Queen is a band.", ImageUrl = "/images/queen.jpg", VideoAddress = "https://www.youtube.com/embed/fJ9rUzIMcZQ?si=hFNKb_FsrMLoIxE1", Albums = { "A Night at the Opera", "The Game", "News of the World" } },
+        new Band { Id = 2, Name = "Beatles", Description = "Beatles is a band.", ImageUrl = "/images/beatles.jpg", VideoAddress = "https://www.youtube.com/embed/CGj85pVzRJs?si=6ltuaQgdZMgYmHRF", Albums = { "Please Please Me", "A Hard Day's Night", "Sgt. Pepper's Lonely Hearts Club Band" } },
+        new Band { Id = 3, Name = "Aerosmith", Description = "Aerosmith is a band.", ImageUrl = "/images/aerosmith.jpg", VideoAddress = "https://www.youtube.com/embed/NMNgbISmF4I?si=_NNpviQ3pudL7PgY", Albums = { "Toys in the Attic", "Rocks", "Permanent Vacation" } }
     ];
 
         public Band[] GetAllBands() => [.. bands.OrderBy(o => o.Name)];
