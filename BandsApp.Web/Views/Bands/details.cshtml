@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="@Url.Content("~/css/style.css")" />
 </head>
 <body>
-    <div class="band-container">
+    <main>
         <h2>Band</h2>
         <p>@Model.Name</p>
         <p>@Model.Description</p>
@@ -22,6 +22,6 @@
             <img src="@Model.ImageUrl"/>
             <iframe width="560" height="315" src=@Model.VideoAddress title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-    </div>
+    </main>
 </body>
 </html>

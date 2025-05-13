@@ -1,8 +1,14 @@
 ﻿.band-media {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    gap: 2rem;
 }
 
 .band-media img {
-    max-width: 600px;
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
 }
