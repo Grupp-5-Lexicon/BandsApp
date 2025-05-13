@@ -32,11 +32,12 @@ main ul li{
     list-style: none;
 }
 
-main ul li a {
-    text-decoration: none;
-    font-size:100px;
-    font-weight:900;
-}
+    main ul li a {
+        text-decoration: none;
+        font-size: 100px;
+        font-weight: 900;
+        color: inherit;
+    }
 
 main ul li a:hover {
     text-decoration:underline;
