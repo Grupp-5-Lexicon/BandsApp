@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="@Url.Content("~/css/style.css")"/>
 </head>
 <body>
-    <header><h2>Bands Webb App</h2></header>
-    
-    
-    <ul>
-        @foreach (var band in Model)
-        {
-            <li><a href="/details/@band.Id">@band.Name</a></li>
-        }
-    </ul>
+    <header class="container-fluid"><h2>Bands Webb App</h2></header>
+    <main>
+        <ul>
+            @foreach (var band in Model)
+            {
+                <li><a href="/details/@band.Id">@band.Name</a></li>
+            }
+        </ul>
+    </main>
+      
     <footer>
         Sidan skapades av grupp FEM:
         <ul>
