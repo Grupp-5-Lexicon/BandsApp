@@ -4,7 +4,7 @@ namespace BandsApp.Web.Services
 {
     public class BandService
     {
-        List<Band> bands =
+        private List<Band> bands =
     [
         new Band { Id = 1, Name = "Queen", Description = "A British rock band formed in 1970, known for their theatrical live performances and the legendary voice of Freddie Mercury. Their music spans genres, with hits like \"Bohemian Rhapsody\" and \"We Will Rock You,\" making them one of the most successful and beloved bands of all time.", ImageUrl = "/images/queen.jpg", VideoAddress = "https://www.youtube.com/embed/fJ9rUzIMcZQ?si=hFNKb_FsrMLoIxE1", Albums = { "A Night at the Opera", "The Game", "News of the World" } },
         new Band { Id = 2, Name = "Beatles", Description = "A British rock band formed in 1960, often regarded as the most influential band in history. Their innovative music and cultural impact reshaped pop and rock music, with iconic albums like \"Sgt. Pepper's Lonely Hearts Club Band\" and \"Abbey Road.\"", ImageUrl = "/images/beatles.jpg", VideoAddress = "https://www.youtube.com/embed/CGj85pVzRJs?si=6ltuaQgdZMgYmHRF", Albums = { "Please Please Me", "A Hard Day's Night", "Sgt. Pepper's Lonely Hearts Club Band" } },

@@ -51,6 +51,7 @@ footer ul{
     flex-direction:row;
     justify-content:center;
     align-items:center;
+    gap:20px;
 }
 footer ul li {
         list-style: none;
