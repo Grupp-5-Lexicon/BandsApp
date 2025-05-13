@@ -4,21 +4,24 @@
 <head>
     <title>Bands</title>
     <link rel="stylesheet" href="https://unpkg.com/@@picocss/pico@@latest/css/pico.classless.min.css">
-
+    <link rel="stylesheet" href="@Url.Content("~/css/style.css")" />
 </head>
 <body>
-    <h2>Band</h2>
-    <p>@Model.Name</p>
-    <p>@Model.Description</p>
-    <h3><br />Albums</h3>
-    <ul>
-        @foreach (var album in Model.Albums)
-        {
-            <li>@album</li>
-        }
-    </ul>
-    <img src="@Model.ImageUrl"/>
-    <iframe width="560" height="315" src=@Model.VideoAddress title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+    <div class="band-container">
+        <h2>Band</h2>
+        <p>@Model.Name</p>
+        <p>@Model.Description</p>
+        <h3><br />Albums</h3>
+        <ul>
+            @foreach (var album in Model.Albums)
+            {
+                <li>@album</li>
+            }
+        </ul>
+        <div class="band-media">
+            <img src="@Model.ImageUrl"/>
+            <iframe width="560" height="315" src=@Model.VideoAddress title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
 </body>
 </html>
