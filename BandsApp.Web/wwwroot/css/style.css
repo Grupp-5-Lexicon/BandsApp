@@ -1,0 +1,8 @@
+﻿.band-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.band-media img {
+    max-width: 600px;
+}
